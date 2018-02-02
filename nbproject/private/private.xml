@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_16_134407_create_chude_sanpham_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/.env</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_092033_create_khuyenmai_sanpham_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_075051_create_sanpham_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/seeds/DatabaseSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/app/Mau.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_083329_create_nhanvien_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/app/Http/Controllers/ChuDeController.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/app/ChuDe.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_082027_create_quyen_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_074509_create_loai_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/seeds/khachhangTableSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_060243_create_xuatxu_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_062606_create_nhacungcap_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_075706_create_hinhanh_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/migrations/2017_12_12_090355_create_khuyenmai_table.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/app/Http/Controllers/MauController.php</file>
+            <file>file:/C:/xampp/htdocs/sunshine/database/seeds/nhanvienTableSeeder.php</file>
+        </group>
+    </open-files>
+</project-private>
