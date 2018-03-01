@@ -71,6 +71,60 @@
 
             <!-- *** HOT PRODUCT SLIDESHOW ***
  _________________________________________________________ -->
+
+
+            <!-- search -->
+        <div>
+            <div class="container-fluid">
+                <form class="navbar-form navbar-right"> 
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="txttuKhoa" placeholder="Tìm Kiếm" style="width: 100%" value="{{$tuKhoa or ''}}">
+                    </div>
+                    <div class="form-group">
+                        <select id="cmbLoai" class="form-control">
+                            <option value="0">ALL</option>
+                            @foreach($dsLoai as $l)
+                            <option value="{{$l->l_ma}}">{{$l->l_ten}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="cmbChude" class="form-control">
+                            <option value="0">ALL</option>
+                            @foreach($dsChude as $cd)
+                            <option value="{{$cd->cd_ma}}">{{$cd->cd_ten}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <?php 
+                        $dsGia = [];
+                        for($i=200000; $i<=2200000; $i+= 200000){
+                            array_push($dsGia, $i);
+                        }
+                     ?>
+                     <div class="form-group">
+                        <select id="cmbgiaTu" class="form-control">
+                            <option value="0">ALL</option>
+                            @foreach($dsGia as $gia)
+                            <option value="{{$gia}}">{{number_format($gia)}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="cmbgiaDen" class="form-control">
+                            <option value="0">ALL</option>
+                            @foreach($dsGia as $gia)
+                            <option value="{{$gia}}">{{number_format($gia)}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button id="btnTimkiem" class=" btn btn-default navbar-right" type="button">Tìm Kiếm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
             <div id="hot">
 
                 <div class="box">
@@ -207,7 +261,28 @@
 
 
         </div>
+
     
 
+@endsection
 
+@section('script')
+    <script>
+
+
+    $(document).ready(function(){
+        $("#btnTimkiem").click(function(){
+        tuKhoa = $('#txttuKhoa').val().trim();
+        tuKhoa = tuKhoa == "" ? "-" : tuKhoa;
+        maLoai = $('#cmbLoai :selected').val();
+        maChude = $('#cmbChude :selected').val();
+        giaTu = $('#cmbgiaTu :selected').val();
+        giaDen = $('#cmbgiaDen :selected').val();
+
+        location.href = "/timkiem/"+tuKhoa+"/"+maLoai+"/"+maChude+"/"+giaTu+"/"+giaDen;
+
+
+    });
+});
+</script>
 @endsection

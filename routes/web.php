@@ -22,6 +22,7 @@ Route::get('/', 'frontendController@index');
 Route::get('/checkout', 'frontendController@showviewcheckout');
 Route::get('/testMail', 'frontendController@testMail');
 Route::post('/sunshine/public/checkout', 'frontendController@checkoutJson')->name('checkout');
+Route::get('/timkiem/{tuKhoa}/{maLoai}/{maChude}/{giaTu}/{giaDen}', ['uses' => 'frontendController@dsSanpham_timkiem']);
 
 
 
